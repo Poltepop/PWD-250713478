@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formulir Pendaftaran Seminar</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <h1>Formulir Pendaftaran Seminar</h1>
+                <p>
+                    Masukan Fromulir dibawah untuk melakukan pendaftaraan seminar
+                </p>
+            </div>
+            <form action="" method="post" enctype="multipart/form-data">
+                <table cellspacing="4" cellpadding="4" style="border-collapse:collapse; width: 100%;">
+                    <tr>
+                        <td>
+                            <label for="nama">Masukan Nama Peserta</label>
+                        </td>
+                        <td>
+                            <input type="text" id="nama" name="nama" size="30" placeholder="example"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">Masukan Email</label>
+                        </td>
+                        <td>
+                            <input type="text" id="email" name="email" size="30" placeholder="exmaple@gmail.com"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="nim">Masukan NIM</label>
+                        </td>
+                        <td>
+                            <input type="text" id="nim" name="nim" size="30" placeholder="1233912"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="prodi">Pilih Program Studi</label>
+                        </td>
+                        <td>
+                            <select id="prodi" name="prodi">
+                                <option hidden="hidden">Program Studi</option>
+                                <option>Informatika</option>
+                                <option>Sistem Informasi</option>
+                                <option>Teknik Industri</option>
+                                <option>Manajemen</option>
+                                <option>Akuntansi</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Jenis Tiket
+                        </td>
+                        <td>
+                            <input type="radio" id="reguler" name="tiket" value="Reguler" />
+                            <label for="reguler">Reguler</label>
+                            <input type="radio" id="vip" name="tiket" value="VIP" />
+                            <label for="vip">VIP</label>
+                            <input type="radio" id="online" name="tiket" value="Online" />
+                            <label for="online">Online</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align:top;">
+                            Pilih Topik Seminar
+                        </td>
+                        <td>
+                            <p>
+                                <input type="checkbox" id="ai" name="topik" value="Artificial Intelligence" />
+                                <label for="ai">Artificial Intelligence</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="data" name="topik" value="Data Science" />
+                                <label for="data">Data Science</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="cyber" name="topik" value="Cyber Security" />
+                                <label for="cyber">Cyber Security</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="cloud" name="topik" value="Cloud Computing" />
+                                <label for="cloud">Cloud Computing</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="web" name="topik" value="Web Development" />
+                                <label for="web">Web Development</label>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="jam">Pilihan Jam Pelaksanaan</label>
+                        </td>
+                        <td>
+                            <select id="jam" name="jam">
+                                <option>08.00 - 10.00</option>
+                                <option>10.00 - 12.00</option>
+                                <option>13.00 - 15.00</option>
+                                <option>15.00 - 17.00</option>
+                                <option>19.00 - 21.00</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top;">
+                            Metode Pembayaran
+                        </td>
+                        <td>
+                            <p>
+                                <input type="radio" id="qris" name="pembayaran" value="QRIS" />
+                                <label for="qris">QRIS</label>
+                            </p>
+                            <p>
+                                <input type="radio" id="transfer" name="pembayaran" value="Transfer Bank" />
+                                <label for="transfer">Transfer Bank</label>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top;">
+                            <label for="pertanyaan">Pertanyaan Narasumber</label>
+                        </td>
+                        <td>
+                            <textarea id="pertanyaan" name="pertanyaan" rows="8" cols="30"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="bukti">Bukti Pembayaran</label>
+                        </td>
+                        <td>
+                            <input type="file" id="bukti" name="bukti" accept="image/gif, image/jpeg, image/png" />
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" name="Simpan" value="Simpan Pendaftaran" />
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
