@@ -28,6 +28,14 @@ function fn_valForm(){
         msg += "Validation Email \n";
     }
 
+    if(umur < 7 || umur > 70){
+        msg += "Umur Harus di tentang 7-70";
+    }
+
+    if(isNaN(umur)){
+        msg += "Umur Harus Berupa Angka";
+    }
+
     if(msg != ""){
         alert(`\n${msg}`);
         return false;
