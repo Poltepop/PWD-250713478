@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <title>From Peminjaman Buku (XHTML)</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <h1>Registrasi Perpustakaan Digital</h1>
+    <form action="#" method="post" onsubmit="return fn_valForm()">
+        <p>Nama: </p>
+        <input type="text" name="nama" id="nama"/>
+
+        <p>Email: </p>
+        <input type="text" name="email" id="email"/>
+
+        <p>Umur: </p>
+        <input type="text" name="umur" id="umur"/>
+
+        <p>Koleksi Favorite: </p>
+        <select name="kategori" id="kategori">
+            <option value="">-- Pilih --</option>
+            <option value="f">Fiksi</option>
+            <option value="n">Non-Fiksi</option>
+            <option value="j">Jurnal Ilimiah</option>
+        </select>
+
+        <input type="submit" value="daftar"/>
+    </form>
+</body>
+</html>

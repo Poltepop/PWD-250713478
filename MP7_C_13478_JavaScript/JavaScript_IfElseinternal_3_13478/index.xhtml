@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <title>From Peminjaman Buku (XHTML)</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <script type="text/javascript">
+        let iTinggi;
+        let sDampingi;
+
+        iTinggi = prompt("Masukan Tinggi Badan (CM)", 0);
+        sDampingi = prompt("Dampingi orang dewasa? (Y)ya atau (T)tidak ", "Y");
+
+        if(iTinggi > 140){
+            if(sDampingi == "Y"){
+                alert("Boleh naik Wahana ekstrem");
+            }else{
+                alert("Boleh naik, disarankan didampingi");
+            }
+        }else{
+            if(sDampingi == "Y"){
+                alert("Hanya wahana anak (didampingi)");
+            }else{
+                alert("Tidak boleh naik wahana");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>If-Else internal: Wahana Taman Hiburan</h1>
+    <p>Reload halaman untuk Mencoba lagi</p>
+</body>
+</html>
